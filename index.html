@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Danny’s Fragrance Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg1: #0b0b0f;
+      --bg2: #1a1a23;
+      --accent: #00ffe1;
+      --text-light: #e0e0e0;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body {
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: var(--text-light);
+      background: linear-gradient(120deg, var(--bg1), var(--bg2));
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      max-width: 90%;
+      padding: 2rem;
+      background: rgba(20,20,30,0.6);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 20px rgba(0,255,225,0.2);
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--bg1);
+      background: var(--accent);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent);
+    }
+    @media (min-width: 600px) {
+      h1 { font-size: 3.5rem; }
+      p { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Danny’s Fragrance Hub</h1>
+    <p>Discover the scent of tomorrow. Hand‑picked, elite fragrances delivered straight to you. Elevate your presence—one note at a time.</p>
+    <a href="#shop" class="btn">Explore Now</a>
+  </div>
+</body>
+</html>
