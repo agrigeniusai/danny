@@ -1,0 +1,8 @@
+cpanel:
+  version: 2
+deploy:
+  tasks:
+    - echo "→ Clearing public_html…"
+    - rm -rf /home/danngxjh/public_html/*
+    - echo "→ Copying files into public_html…"
+    - cp -R * /home/danngxjh/public_html
